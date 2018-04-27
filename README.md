@@ -1,2 +1,2 @@
 # bash_files
-Group of bash files for daily use
+Group of scripts and config files for daily reference 
