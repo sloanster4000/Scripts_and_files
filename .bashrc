@@ -104,7 +104,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 alias vi='vim'
-alias desktop='cd /mnt/c/Users/esloan/Desktop'
+alias desktop='cd /mnt/c/Users/user/Desktop'
 alias df='df -h'
 alias du='du -h'
 alias cls='clear'
