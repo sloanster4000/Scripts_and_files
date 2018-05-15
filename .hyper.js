@@ -27,7 +27,7 @@ module.exports = {
         cursorAccentColor: '#FF3300',
 
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-        cursorShape: 'BLOCK',
+        cursorShape: 'BEAM',
 
         // set to `true` (without backticks and without quotes) for blinking cursor
         cursorBlink: false,
@@ -48,16 +48,6 @@ module.exports = {
         // custom CSS to embed in the main window
         css: ``,
 
-            //     `
-            // ${config.css || ''}
-            // .tabs_nav .tabs_list .tab_text {
-            //     color: yellow;
-            // }
-            // .tabs_nav .tabs_title {
-            //     color: yellow;
-            // }
-            // `
-
         // custom CSS to embed in the terminal window
         termCSS: '',
 
@@ -77,27 +67,26 @@ module.exports = {
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object
         colors: {
-            black: '#000000',
-            red: '#FF0000',
-            green: '#1F9900',
-            yellow: '#E6E600',
-            blue: '#0066FF',
-            magenta: '#CC00FF',
-            cyan: '#00FFFF',
-            white: '#F2F2F2',
-            lightBlack: '#666666',
-            lightRed: '#FF8080',
-            lightGreen: '#70FF4D',
-            lightYellow: '#FFFF4D',
-            lightBlue: '#4D94FF',
-            lightMagenta: '#E580FF',
-            lightCyan: '#B3FFFF',
-            lightWhite: '#FFFFFF',
+            // black: '#000000',
+            // red: '#FF0000',
+            // green: '#1F9900',
+            // yellow: '#E6E600',
+            // blue: '#0066FF',
+            // magenta: '#CC00FF',
+            // cyan: '#00FFFF',
+            // white: '#F2F2F2',
+            // lightBlack: '#666666',
+            // lightRed: '#FF8080',
+            // lightGreen: '#70FF4D',
+            // lightYellow: '#FFFF4D',
+            // lightBlue: '#4D94FF',
+            // lightMagenta: '#E580FF',
+            // lightCyan: '#B3FFFF',
+            // lightWhite: '#FFFFFF',
         },
 
         materialBox: {
             highlightSelectedTab: true,
-            lightEffect: true,
             user: {
                 backgroundColor: '#000000',
                 foregroundColor: '#FFFFFF',
@@ -162,6 +151,9 @@ module.exports = {
         // bellSoundURL: 'http://example.com/bell.mp3',
 
         // for advanced config flags please refer to https://hyper.is/#cfg
+        
+        // set opacity for hyper-opacity plugin
+        opacity: 0.75,
     },
 
     // a list of plugins to fetch and install from npm
@@ -170,12 +162,16 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyper-material-box'],
+    plugins: [
+    'hyper-material-box',
+    'hyper-opacity',
+    'hyper-tab-icons',
+    ],
 
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
-    localPlugins: [  ],
+    localPlugins: [ '' ],
 
     keymaps: {
         // Example
