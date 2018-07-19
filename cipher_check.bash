@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#Copyright (c) 2018 Sloanster4000
+#Licensed under the terms of LICENSE included in this project
 
 # OpenSSL requires the port number.
 DELAY=1
