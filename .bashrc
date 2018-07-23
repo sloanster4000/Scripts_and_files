@@ -108,6 +108,7 @@ alias desktop='cd /mnt/c/Users/user/Desktop'
 alias df='df -h'
 alias du='du -h'
 alias cls='clear'
+alias hostfile='cd /mnt/c/Windows/System32/drivers/etc'
 export DISPLAY=localhost:0.0
 
 if [ -f ~/.bash_aliases ]; then
